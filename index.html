@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>URL Thing V1</title>
+  </head>
+  <body>
+    <input type="text" name="urlthing" value="" id="urlthing" placeholder="Url here">
+    <button type="button" name="button" onclick="ok()">Create URL</button>
+  </body>
+</html>
+
+<script type="text/javascript">
+  function ok() {
+    power = "5" //5 is defualt
+    url = "Your URL"
+    var URLTHINGXDDDD = document.getElementById("urlthing").value;
+    window.location.href = url + "API.php?main=" + URLTHINGXDDDD + "&amount=" + power;
+  }
+</script>
